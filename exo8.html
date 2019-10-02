@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo8</title>
+    <style>
+        label {
+            width: 150px;
+            display: inline-block;
+            font-size: 1em;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form method="GET" id="formpersonne">
+        <fieldset>
+            <legend>Formulaire d'inscription</legend>
+            <label>Nom </label>
+            <input name="Nom" type="text" value="" placeholder="Mettez votre Nom">
+            <br>
+            <label>Prénom </label>
+            <input name="Prénom" type="texte" placeholder="Mettez votre Prénom"> <br>
+            <label>Email</label>
+            <input name="Email" type="text" placeholder="Saississez votre Email">
+            <br><br>
+
+
+            <label>Sexe</label>
+            Masculin <input type="radio" name="sexe" value="Masculin" />
+
+            Féminin<input type="radio" name="sexe" value="Feminin" />
+            <br><br>
+
+            <label>Photo</label>
+            <input name="Photo" type="file" accept="image/*">
+            <br><br>
+            <label>Pays</label>
+            <select name="pays">
+                <option value="France" selected="selected">France </option>
+                <option value="Afghanistan">Afghanistan </option>
+                <option value="Afrique_Centrale">Afrique_Centrale </option>
+                <option value="Afrique_du_sud">Afrique_du_Sud </option>
+                <option value="Albanie">Albanie </option>
+
+            </select>
+
+            <br><br>
+
+            <label for="pet-select">Les langages préférés:</label>
+
+            <select id="pet-select" size="4" multiple>
+                <option value="">Matlab</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Javascript">Javascript</option>
+
+            </select>
+            (Pour faire plusieurs choix maintenir la touche CNTRL enfoncée)
+            <br><br>
+            <label>Domaines d'activités</label>
+            <input type="checkbox" name="choix1" value="1"> Informatique
+            <input type="checkbox" name="choix2" value="2"> Gestion
+            <input type="checkbox" name="choix3" value="3"> Pédagogie
+            <br> <br>
+
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Annuler">
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

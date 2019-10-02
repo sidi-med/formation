@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+​
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <title>Menu Horizontal Flex</title>
+    <style>
+     h1 {
+            font-weight: bold;
+            font-size: 3em;
+        color: orange;
+        margin: auto;
+        }
+
+        .conteneur-flexible {
+            width: 100%;
+            height: 100px;
+            padding: 20px;
+            display: flex;
+            color: rgb(207, 238, 145);
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+        
+
+        .element-flexible {
+            flex: 0 1 50%;
+            width: 30%;
+            text-align: center;
+           
+        }
+
+        nav a {
+            color: orange;
+            text-decoration: none;
+            display: block;
+            border-bottom: 2px solid transparent;
+            width: 50%;
+            position: sticky;
+            top: 0;
+
+
+        }
+
+        a:hover {
+            border-bottom: 2px solid orange;
+            padding-bottom: 5px;
+
+        }
+        .deroulant>a::after {
+            content: " ▼";
+            font-size: 12px;
+        }
+    </style>
+</head>
+​
+
+<body>
+    <h1>Menu horizontal Flex</h1>
+    <nav>
+        <ul class="conteneur-flexible">
+            <li class="element-flexible deroulant"><a href="#">HTML 5</a></li>
+            <li class="element-flexible deroulant"><a href="#">CSS 3</a></li>
+            <li class="element-flexible deroulant"><a href="#">JavaScript</a></li>
+            <li class="element-flexible deroulant"><a href="#">jQuery</a></li>
+        </ul>
+    </nav>
+    <div class="conteneur">
+        <p>Vous me voyez toujours ???</p>
+    </div>
+</body>
+​
+
+</html>

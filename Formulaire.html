@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire</title>
+
+    <style>
+        label {
+            width: 80px;
+            display: inline-block;
+            font-size: 1.3em;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form method="POST" id="formpersonne" action="mailto:smsidimed@gmail.com">
+        <fieldset>
+            <legend>Informations Nominatives</legend>
+            <label>Nom :</label>
+            <input name="Nom" type="text" value="" placeholder="Mettez votre Nom" autocomplete="off" readonly>
+            <br>
+            <label>Prénom :</label>
+            <input name="Prénom" type="texte" placeholder="Mettez votre Prénom"> <br>
+            <label>Age</label>
+            <input name="Age" type="number" form="formpersonne" min="18" placeholder="Mettez votre Age">
+            <br>
+            <label>Fichier</label>
+            <input name="image" type="file"  placeholder="Inserez un fichier">
+        </fieldset>
+        <br><br>
+        <input type="submit" value="Envoyez les données">
+    </form>
+
+</body>
+
+</html>

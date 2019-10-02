@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries</title>
+    <style>
+        .conteneur-flexible {
+            width: 80%;
+            height: 500px;
+            margin: 10px auto;            
+            background-color: chocolate;
+            color: rgb(253, 253, 119);
+            border: 2px dashed beige;
+            display: flex;
+            box-sizing: border-box;
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .element-flexible {
+            flex: 1 0 20%; 
+            width: 90%;
+            background-color: rgb(251, 214, 145);
+            color: black;
+            border: 1px solid blue;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        /* .num1 { order: 1;  } 
+        .num2 { order: 2;  } 
+        .num3 { order: 3;  }  */
+
+        .fg1 { flex-grow: 1 }
+        .fg3 { flex-grow: 3 }
+
+
+        .ef70 { flex-basis: 70%; }
+        .fs0 {flex-shrink: 0;}
+        .fs1 {flex-shrink: 1;}
+        .fs4 {flex-shrink: 4;}
+
+        @media screen and (min-width: 1000px){
+
+            .conteneur-flexible{
+                flex-flow: row nowrap;
+                height: 600px;
+            }
+            
+            .element-flexible {
+                flex: 1 1 30%;
+                height: 90%;
+                background-color: rgb(121, 105, 105);
+                color: white;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="conteneur-flexible ligne">
+        <div class="element-flexible ">1</div>
+        <div class="element-flexible ">2</div>
+        <div class="element-flexible " >3</div>
+        <div class="element-flexible ">4</div>
+    </div>
+</body>
+
+</html>
